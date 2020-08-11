@@ -4,7 +4,5 @@ class Song < ActiveRecord::Base
 
   def artist_name
     @song = Song.find_by(param[:artist_id]).name
-
-
   end
 end
