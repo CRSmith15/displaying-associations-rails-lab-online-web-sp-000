@@ -3,6 +3,6 @@ class Song < ActiveRecord::Base
 
 
   def artist_name
-    @song = Song.all.find(params[:artist_id]).name
+    self.artist.name
   end
 end
